@@ -1,0 +1,683 @@
+[
+  {
+    "file_name": "packet_A_lotus_valley_cardiac.pdf",
+    "hospital_name": "Lotus Valley Multispeciality Hospital",
+    "hospital_gstin": "36AAACL4412F1Z9",
+    "final_bill_no": "LVH/IP/2026/01893",
+    "ip_no": "IP-26-00981",
+    "bill_date": "2026-03-06",
+    "payment_due_date": "2026-03-21",
+    "patient_name": "Ravi Kumar Menon",
+    "patient_uhid": "LVH-2026-004417",
+    "age": 58,
+    "gender": "Male",
+    "admission_date": "2026-03-02",
+    "discharge_date": "2026-03-06",
+    "los_days": 4,
+    "icu_days": 1,
+    "ward_days": 3,
+    "primary_diagnosis": "Acute NSTEMI (non-ST elevation myocardial infarction) with Type 2 Diabetes Mellitus",
+    "procedure_performed": "PCI to LAD with 1 drug-eluting stent",
+    "consultant": "Dr. Sanjana Rao, MD, DM (Cardiology)",
+    "insurer_name": "Bharat Shield Health Insurance Ltd",
+    "policy_number": "BSH-HLT-778812",
+    "member_id": "BSH-M-0091-4471",
+    "claim_type": "Cashless",
+    "subtotal": 198986.8,
+    "discount": 9357.5,
+    "gst": 825.0,
+    "grand_total_printed": 190454.3,
+    "grand_total_computed": 190454.3,
+    "advance_paid": 20000.0,
+    "balance_payable": 170454.3,
+    "lab_total": 3400.0,
+    "pharmacy_total": 11836.8,
+    "claimed_amount": 190454.3,
+    "non_payable": 1840.0,
+    "copay_amount": 18861.43,
+    "approved_amount": 169752.87,
+    "patient_share": 20701.43,
+    "insurer_reference": "BSH/CL/2026/558201",
+    "approval_status": "APPROVED",
+    "defects": [],
+    "line_items": [
+      {
+        "line_no": 1,
+        "description": "ICU Charges (per day)",
+        "qty": 1,
+        "rate": 12000.0,
+        "amount": 12000.0
+      },
+      {
+        "line_no": 2,
+        "description": "Ward Rent - Twin Sharing (per day)",
+        "qty": 3,
+        "rate": 5500.0,
+        "amount": 16500.0
+      },
+      {
+        "line_no": 3,
+        "description": "Cath Lab Procedure - PCI with 1 DES",
+        "qty": 1,
+        "rate": 145000.0,
+        "amount": 145000.0
+      },
+      {
+        "line_no": 4,
+        "description": "Consultant Visits",
+        "qty": 8,
+        "rate": 1200.0,
+        "amount": 9600.0
+      },
+      {
+        "line_no": 5,
+        "description": "Radiology - Chest X-Ray PA view",
+        "qty": 1,
+        "rate": 650.0,
+        "amount": 650.0
+      },
+      {
+        "line_no": 6,
+        "description": "Laboratory Investigations (see Laboratory Report)",
+        "qty": 1,
+        "rate": 3400.0,
+        "amount": 3400.0
+      },
+      {
+        "line_no": 7,
+        "description": "Pharmacy & Consumables (see Pharmacy Statement)",
+        "qty": 1,
+        "rate": 11836.8,
+        "amount": 11836.8
+      }
+    ],
+    "lab_results": [
+      {
+        "test_name": "Haemoglobin",
+        "value": 12.1,
+        "unit": "g/dL",
+        "ref_low": 13.0,
+        "ref_high": 17.0,
+        "flag": "L",
+        "charge": 250
+      },
+      {
+        "test_name": "Total WBC count",
+        "value": 11.8,
+        "unit": "x10^3/uL",
+        "ref_low": 4.0,
+        "ref_high": 11.0,
+        "flag": "H",
+        "charge": 250
+      },
+      {
+        "test_name": "Platelet count",
+        "value": 245,
+        "unit": "x10^3/uL",
+        "ref_low": 150,
+        "ref_high": 410,
+        "flag": "N",
+        "charge": 200
+      },
+      {
+        "test_name": "HbA1c",
+        "value": 8.9,
+        "unit": "%",
+        "ref_low": 4.0,
+        "ref_high": 5.6,
+        "flag": "H",
+        "charge": 650
+      },
+      {
+        "test_name": "Fasting blood glucose",
+        "value": 162,
+        "unit": "mg/dL",
+        "ref_low": 70,
+        "ref_high": 100,
+        "flag": "H",
+        "charge": 150
+      },
+      {
+        "test_name": "LDL cholesterol",
+        "value": 148,
+        "unit": "mg/dL",
+        "ref_low": 0,
+        "ref_high": 100,
+        "flag": "H",
+        "charge": 400
+      },
+      {
+        "test_name": "Troponin I",
+        "value": 2.8,
+        "unit": "ng/mL",
+        "ref_low": 0,
+        "ref_high": 0.04,
+        "flag": "H",
+        "charge": 1200
+      },
+      {
+        "test_name": "Serum creatinine",
+        "value": 1.1,
+        "unit": "mg/dL",
+        "ref_low": 0.7,
+        "ref_high": 1.3,
+        "flag": "N",
+        "charge": 300
+      }
+    ],
+    "medications": [
+      {
+        "drug": "Aspirin",
+        "form": "75 mg tab",
+        "per_day": 1,
+        "days": 4,
+        "qty": 4,
+        "unit_price": 2.5,
+        "amount": 10.0
+      },
+      {
+        "drug": "Clopidogrel",
+        "form": "75 mg tab",
+        "per_day": 1,
+        "days": 4,
+        "qty": 4,
+        "unit_price": 9.8,
+        "amount": 39.2
+      },
+      {
+        "drug": "Atorvastatin",
+        "form": "80 mg tab",
+        "per_day": 1,
+        "days": 4,
+        "qty": 4,
+        "unit_price": 18.0,
+        "amount": 72.0
+      },
+      {
+        "drug": "Enoxaparin",
+        "form": "60 mg inj",
+        "per_day": 2,
+        "days": 2,
+        "qty": 4,
+        "unit_price": 485.0,
+        "amount": 1940.0
+      },
+      {
+        "drug": "Metformin",
+        "form": "500 mg tab",
+        "per_day": 2,
+        "days": 4,
+        "qty": 8,
+        "unit_price": 3.2,
+        "amount": 25.6
+      },
+      {
+        "drug": "Insulin Glargine",
+        "form": "100 IU/mL pen",
+        "per_day": null,
+        "days": null,
+        "qty": 1,
+        "unit_price": 1150.0,
+        "amount": 1150.0
+      },
+      {
+        "drug": "Cath lab consumable kit",
+        "form": "kit",
+        "per_day": null,
+        "days": null,
+        "qty": 1,
+        "unit_price": 8600.0,
+        "amount": 8600.0
+      }
+    ],
+    "page_types": {
+      "1": "Discharge Summary",
+      "2": "Hospital Bill",
+      "3": "Lab Report",
+      "4": "Pharmacy Statement / Prescription",
+      "5": "Insurance Claim"
+    }
+  },
+  {
+    "file_name": "packet_B_greenfield_surgery.pdf",
+    "hospital_name": "Greenfield Surgical & Diabetes Centre",
+    "hospital_gstin": "27AAFCG7781K1Z2",
+    "final_bill_no": "GSC-FB-26-07731",
+    "ip_no": "ADM/2026/4417",
+    "bill_date": "2026-04-17",
+    "payment_due_date": "2026-05-02",
+    "patient_name": "Ananya Deshpande",
+    "patient_uhid": "GSC-118-20944",
+    "age": 41,
+    "gender": "Female",
+    "admission_date": "2026-04-14",
+    "discharge_date": "2026-04-17",
+    "los_days": 3,
+    "icu_days": 0,
+    "ward_days": 3,
+    "primary_diagnosis": "Acute calculous cholecystitis",
+    "procedure_performed": "Laparoscopic cholecystectomy",
+    "consultant": "Dr. Kedar Joshi, MS (General Surgery)",
+    "insurer_name": "Sahyadri General Insurance Co.",
+    "policy_number": "SGI-FAM-552019",
+    "member_id": "SGI-55201-03",
+    "claim_type": "Cashless",
+    "subtotal": 144378.4,
+    "discount": 3850.5,
+    "gst": 1080.0,
+    "grand_total_printed": 141607.9,
+    "grand_total_computed": 141607.9,
+    "advance_paid": 25000.0,
+    "balance_payable": 116607.9,
+    "lab_total": 1950.0,
+    "pharmacy_total": 16028.4,
+    "claimed_amount": 141607.9,
+    "non_payable": 1250.0,
+    "copay_amount": 0.0,
+    "approved_amount": 140357.9,
+    "patient_share": 1250.0,
+    "insurer_reference": "SGI/AUTH/26/119874",
+    "approval_status": "APPROVED",
+    "defects": [],
+    "line_items": [
+      {
+        "line_no": 1,
+        "description": "Ward Rent - Private (per day)",
+        "qty": 3,
+        "rate": 7200.0,
+        "amount": 21600.0
+      },
+      {
+        "line_no": 2,
+        "description": "Laparoscopic Cholecystectomy - surgeon package",
+        "qty": 1,
+        "rate": 68000.0,
+        "amount": 68000.0
+      },
+      {
+        "line_no": 3,
+        "description": "Operation Theatre Charges",
+        "qty": 1,
+        "rate": 18000.0,
+        "amount": 18000.0
+      },
+      {
+        "line_no": 4,
+        "description": "Anaesthesia Charges",
+        "qty": 1,
+        "rate": 12000.0,
+        "amount": 12000.0
+      },
+      {
+        "line_no": 5,
+        "description": "Consultant Visits",
+        "qty": 5,
+        "rate": 1000.0,
+        "amount": 5000.0
+      },
+      {
+        "line_no": 6,
+        "description": "Ultrasound Abdomen",
+        "qty": 1,
+        "rate": 1800.0,
+        "amount": 1800.0
+      },
+      {
+        "line_no": 7,
+        "description": "Laboratory Investigations (see Laboratory Report)",
+        "qty": 1,
+        "rate": 1950.0,
+        "amount": 1950.0
+      },
+      {
+        "line_no": 8,
+        "description": "Pharmacy & Consumables (see Pharmacy Statement)",
+        "qty": 1,
+        "rate": 16028.4,
+        "amount": 16028.4
+      }
+    ],
+    "lab_results": [
+      {
+        "test_name": "Haemoglobin",
+        "value": 12.8,
+        "unit": "g/dL",
+        "ref_low": 12.0,
+        "ref_high": 15.5,
+        "flag": "N",
+        "charge": 250
+      },
+      {
+        "test_name": "Total WBC count",
+        "value": 13.2,
+        "unit": "x10^3/uL",
+        "ref_low": 4.0,
+        "ref_high": 11.0,
+        "flag": "H",
+        "charge": 250
+      },
+      {
+        "test_name": "Total bilirubin",
+        "value": 2.4,
+        "unit": "mg/dL",
+        "ref_low": 0.3,
+        "ref_high": 1.2,
+        "flag": "H",
+        "charge": 300
+      },
+      {
+        "test_name": "Alkaline phosphatase",
+        "value": 210,
+        "unit": "U/L",
+        "ref_low": 44,
+        "ref_high": 147,
+        "flag": "H",
+        "charge": 300
+      },
+      {
+        "test_name": "SGPT (ALT)",
+        "value": 68,
+        "unit": "U/L",
+        "ref_low": 7,
+        "ref_high": 56,
+        "flag": "H",
+        "charge": 250
+      },
+      {
+        "test_name": "Serum amylase",
+        "value": 82,
+        "unit": "U/L",
+        "ref_low": 28,
+        "ref_high": 100,
+        "flag": "N",
+        "charge": 450
+      },
+      {
+        "test_name": "Fasting blood glucose",
+        "value": 94,
+        "unit": "mg/dL",
+        "ref_low": 70,
+        "ref_high": 100,
+        "flag": "N",
+        "charge": 150
+      }
+    ],
+    "medications": [
+      {
+        "drug": "Ceftriaxone",
+        "form": "1 g inj",
+        "per_day": 2,
+        "days": 3,
+        "qty": 6,
+        "unit_price": 64.0,
+        "amount": 384.0
+      },
+      {
+        "drug": "Pantoprazole",
+        "form": "40 mg inj",
+        "per_day": 1,
+        "days": 3,
+        "qty": 3,
+        "unit_price": 52.0,
+        "amount": 156.0
+      },
+      {
+        "drug": "Paracetamol",
+        "form": "1 g IV infusion",
+        "per_day": 3,
+        "days": 2,
+        "qty": 6,
+        "unit_price": 145.0,
+        "amount": 870.0
+      },
+      {
+        "drug": "Ondansetron",
+        "form": "4 mg inj",
+        "per_day": 2,
+        "days": 2,
+        "qty": 4,
+        "unit_price": 18.5,
+        "amount": 74.0
+      },
+      {
+        "drug": "Drotaverine",
+        "form": "80 mg tab",
+        "per_day": 2,
+        "days": 3,
+        "qty": 6,
+        "unit_price": 7.4,
+        "amount": 44.4
+      },
+      {
+        "drug": "Laparoscopy consumable kit",
+        "form": "kit",
+        "per_day": null,
+        "days": null,
+        "qty": 1,
+        "unit_price": 14500.0,
+        "amount": 14500.0
+      }
+    ],
+    "page_types": {
+      "1": "Discharge Summary",
+      "2": "Hospital Bill",
+      "3": "Lab Report",
+      "4": "Pharmacy Statement / Prescription",
+      "5": "Insurance Claim"
+    }
+  },
+  {
+    "file_name": "packet_C_riverbend_pneumonia_DEFECTS.pdf",
+    "hospital_name": "Riverbend General Hospital",
+    "hospital_gstin": "33AABCR2290M1Z5",
+    "final_bill_no": "RGH/2026/FB/03310",
+    "ip_no": "RGH-IP-55102",
+    "bill_date": "2026-05-25",
+    "payment_due_date": "2026-06-09",
+    "patient_name": "Mohammed Irfan S",
+    "patient_uhid": null,
+    "age": 66,
+    "gender": "Male",
+    "admission_date": "2026-05-20",
+    "discharge_date": "2026-05-25",
+    "los_days": 5,
+    "icu_days": 2,
+    "ward_days": 3,
+    "primary_diagnosis": "Community-acquired pneumonia, right lower lobe, with acute kidney injury",
+    "procedure_performed": "Non-invasive ventilation (BiPAP)",
+    "consultant": "Dr. Lakshmi Narayanan, MD (Pulmonology)",
+    "insurer_name": "Coastal Assurance India Ltd",
+    "policy_number": "CAI-SR-300471",
+    "member_id": "CAI-300471-01",
+    "claim_type": "Reimbursement",
+    "subtotal": 70471.5,
+    "discount": 0.0,
+    "gst": 0.0,
+    "grand_total_printed": 71471.5,
+    "grand_total_computed": 70471.5,
+    "advance_paid": 30000.0,
+    "balance_payable": 41471.5,
+    "lab_total": 3480.0,
+    "pharmacy_total": 9391.5,
+    "claimed_amount": 71471.5,
+    "non_payable": 980.0,
+    "copay_amount": null,
+    "approved_amount": null,
+    "patient_share": null,
+    "insurer_reference": "CAI/QRY/2026/00412",
+    "approval_status": "QUERY_RAISED",
+    "defects": [
+      "GRAND_TOTAL_PRINTED_WRONG_BY_1000",
+      "UHID_BLANK",
+      "APPROVAL_PENDING_QUERY"
+    ],
+    "line_items": [
+      {
+        "line_no": 1,
+        "description": "ICU Charges (per day)",
+        "qty": 2,
+        "rate": 12000.0,
+        "amount": 24000.0
+      },
+      {
+        "line_no": 2,
+        "description": "Ward Rent - General Ward (per day)",
+        "qty": 3,
+        "rate": 4800.0,
+        "amount": 14400.0
+      },
+      {
+        "line_no": 3,
+        "description": "Non-invasive ventilation (BiPAP) per day",
+        "qty": 2,
+        "rate": 3500.0,
+        "amount": 7000.0
+      },
+      {
+        "line_no": 4,
+        "description": "Consultant Visits",
+        "qty": 10,
+        "rate": 900.0,
+        "amount": 9000.0
+      },
+      {
+        "line_no": 5,
+        "description": "Radiology - Chest X-Ray PA view (x2)",
+        "qty": 2,
+        "rate": 600.0,
+        "amount": 1200.0
+      },
+      {
+        "line_no": 6,
+        "description": "Physiotherapy sessions",
+        "qty": 4,
+        "rate": 500.0,
+        "amount": 2000.0
+      },
+      {
+        "line_no": 7,
+        "description": "Laboratory Investigations (see Laboratory Report)",
+        "qty": 1,
+        "rate": 3480.0,
+        "amount": 3480.0
+      },
+      {
+        "line_no": 8,
+        "description": "Pharmacy & Consumables (see Pharmacy Statement)",
+        "qty": 1,
+        "rate": 9391.5,
+        "amount": 9391.5
+      }
+    ],
+    "lab_results": [
+      {
+        "test_name": "Haemoglobin",
+        "value": 11.2,
+        "unit": "g/dL",
+        "ref_low": 13.0,
+        "ref_high": 17.0,
+        "flag": "L",
+        "charge": 250
+      },
+      {
+        "test_name": "Total WBC count",
+        "value": 16.4,
+        "unit": "x10^3/uL",
+        "ref_low": 4.0,
+        "ref_high": 11.0,
+        "flag": "H",
+        "charge": 250
+      },
+      {
+        "test_name": "C-reactive protein",
+        "value": 96,
+        "unit": "mg/L",
+        "ref_low": 0,
+        "ref_high": 5,
+        "flag": "H",
+        "charge": 600
+      },
+      {
+        "test_name": "Procalcitonin",
+        "value": 2.1,
+        "unit": "ng/mL",
+        "ref_low": 0,
+        "ref_high": 0.5,
+        "flag": "H",
+        "charge": 1800
+      },
+      {
+        "test_name": "Serum creatinine",
+        "value": 1.6,
+        "unit": "mg/dL",
+        "ref_low": 0.7,
+        "ref_high": 1.3,
+        "flag": "H",
+        "charge": 300
+      },
+      {
+        "test_name": "Serum sodium",
+        "value": 131,
+        "unit": "mmol/L",
+        "ref_low": 135,
+        "ref_high": 145,
+        "flag": "L",
+        "charge": 280
+      }
+    ],
+    "medications": [
+      {
+        "drug": "Piperacillin-Tazobactam",
+        "form": "4.5 g inj",
+        "per_day": 3,
+        "days": 5,
+        "qty": 15,
+        "unit_price": 420.0,
+        "amount": 6300.0
+      },
+      {
+        "drug": "Azithromycin",
+        "form": "500 mg tab",
+        "per_day": 1,
+        "days": 5,
+        "qty": 5,
+        "unit_price": 28.0,
+        "amount": 140.0
+      },
+      {
+        "drug": "Budesonide nebulisation",
+        "form": "0.5 mg respule",
+        "per_day": 2,
+        "days": 5,
+        "qty": 10,
+        "unit_price": 22.0,
+        "amount": 220.0
+      },
+      {
+        "drug": "Paracetamol",
+        "form": "650 mg tab",
+        "per_day": 3,
+        "days": 5,
+        "qty": 15,
+        "unit_price": 2.1,
+        "amount": 31.5
+      },
+      {
+        "drug": "Oxygen therapy",
+        "form": "per hour",
+        "per_day": null,
+        "days": null,
+        "qty": 60,
+        "unit_price": 45.0,
+        "amount": 2700.0
+      }
+    ],
+    "page_types": {
+      "1": "Discharge Summary",
+      "2": "Hospital Bill",
+      "3": "Lab Report",
+      "4": "Pharmacy Statement / Prescription",
+      "5": "Insurance Claim"
+    }
+  }
+]
