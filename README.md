@@ -198,7 +198,32 @@ Run `02_pipeline_and_eval.sql` top to bottom. It is the same pipeline written by
 
 Run **step 4a** and look at the raw `ex:response` before trusting the flattening. The array-flattening queries accept two possible output shapes because the exact nesting of array items should be confirmed on your workspace's output.
 
-## 5. Scorecard (fill in as you test)
+## 5. Bulk set: 200 packets for volume testing
+
+`python generate_bulk.py` (default 200, or `python generate_bulk.py 500`) reuses the same 5-page layout, images, planted dependencies and defects, with randomized data:
+
+| Dimension | Variation |
+|---|---|
+| Hospitals (clients) | 8, each with its own UHID / IP No. / bill number format (e.g. `NCH 8694 5877` with spaces, `NCH/25-26/08435` with an Indian financial year), city, GSTIN state code and price tier |
+| Clinical cases | 8: NSTEMI + PCI, cholecystectomy, pneumonia, appendicitis, dengue, knee replacement, DKA, ureteric stone, each with its own labs, chart, medicines, prescription and narrative |
+| Patients, dates, amounts | Random names, ages per case, admissions Apr-2025 to Oct-2026, length of stay and ICU days per case, ward type and rate (GST applies only above ₹5,000/day), discounts 0–10 %, co-pay 0/10/20 %, Cashless or Reimbursement |
+| Defects (~30 %) | One per affected packet: grand total printed +₹1,000, blank UHID (and missing consultant signature), or approval pending (`QUERY_RAISED`) |
+| Duplicates | `upload_dup_1..4.pdf` are byte-identical copies of random packets: a correct pipeline skips them by file hash |
+
+Outputs:
+- `pdfs/pkt_NNNN_<hospital>_<case>.pdf`: the packets (the 3 original packets are untouched).
+- `01b_ground_truth_bulk.sql`: the answer key for **all 203 packets**. It has the same `gt_*` tables as `01_ground_truth.sql` (a superset, so run this one instead), plus `gt_duplicates`.
+- `ground_truth_bulk.json` and `bulk_manifest.csv`: the same data as JSON, and a one-line-per-file overview (hospital, case, dates, defects, duplicate_of).
+
+The data is deterministic (`SEED` in the script), so re-running reproduces identical values. Upload with `databricks fs cp -r pdfs/ dbfs:/Volumes/<catalog>/idp_test/raw_docs/`. Every prompt and query in sections 3–4 works unchanged, because they match on `file_name`.
+
+**Expected validation results at volume:**
+- Clean packets pass every rule.
+- `GRAND_TOTAL_PRINTED_WRONG_BY_1000` fails the grand-total rule.
+- `UHID_BLANK` fails the UHID rule and the signature rule.
+- `APPROVAL_PENDING_QUERY` fails `INSURER_APPROVED` (`approved_amount` must be NULL).
+
+## 6. Scorecard (fill in as you test)
 
 | Metric | Run 1 | After hill climb | Notes |
 |---|---|---|---|
